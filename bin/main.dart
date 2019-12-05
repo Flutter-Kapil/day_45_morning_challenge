@@ -7,6 +7,22 @@
 //  Input: [7,1,5,3,6,4]
 //  Output: 5
 
-
+maxProfit(List<int> stockPrice){
+  int profit=0;
+  for(int i=0;i<stockPrice.length;i++ ){
+    for(int j=i+1;j<stockPrice.length;j++ ){
+      int temp = stockPrice[j]-stockPrice[i];
+      temp>profit?profit = temp:null;
+    }
+  }
+  return profit;
+}
 main() {
+  print(maxProfit([7,1,5,3,6,4]));//5
+  print(maxProfit([3,10,1,2,4]));//7
+  print(maxProfit([3,1,2,4]));//3
+  print(maxProfit([2,5,4,3]));//3
+
+  print(maxProfit([2,5,4,3,1,5]));//3
+
 }
