@@ -24,5 +24,7 @@ main() {
   print(maxProfit([2,5,4,3]));//3
 
   print(maxProfit([2,5,4,3,1,5]));//3
+  print(maxProfit([7,4,5,10,6,12]));//8
+  print(maxProfit([7,4,5,10,1,12]));//11
 
 }
